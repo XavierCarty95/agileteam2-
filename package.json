@@ -1,0 +1,25 @@
+{
+  "name": "agileteam2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XavierCarty95/agileteam2-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/XavierCarty95/agileteam2-/issues"
+  },
+  "homepage": "https://github.com/XavierCarty95/agileteam2-#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongoose": "^5.4.19",
+    "nodemon": "^1.18.10"
+  },
+  "devDependencies": {}
+}
