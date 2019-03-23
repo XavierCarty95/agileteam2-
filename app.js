@@ -2,6 +2,8 @@ const express = require('express');
 const app = express() 
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+const fs = require('fs');
+const http = require('http');
 
 app.use(bodyParser.json())
 
@@ -12,10 +14,12 @@ mongoose.connect('mongodb://localhost/employee' , { useNewUrlParser: true })
 const db = global.connection
 
 app.get('/', function(req,res){
-    res.send('Please use /api ')
+    res.sendFile(__dirname + '/index.html')
 }); 
 
 app.get('/api/employees', function(req,res){
+    
+    
     Employee.getEmployees(function(error, employee){
         if(error){
             throw error; 
@@ -28,7 +32,6 @@ app.get('/api/employees', function(req,res){
 
 app.post('/api/employees', function(req,res){
     var employee = req.body;
-    
     Employee.addEmployees(employee,function(error, employee){
         if(error){
             throw error; 

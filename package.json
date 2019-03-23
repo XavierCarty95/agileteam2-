@@ -17,7 +17,11 @@
   },
   "homepage": "https://github.com/XavierCarty95/agileteam2-#readme",
   "dependencies": {
+    "assert": "^1.4.1",
     "express": "^4.16.4",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "mongodb": "^3.2.2",
     "mongoose": "^5.4.19",
     "nodemon": "^1.18.10"
   },
